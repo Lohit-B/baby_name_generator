@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Name for new-bourn</title>
+  </head>
+  <body>
+  	<div class='container'>
+  	<h3 class='text-center'> Name for Babies</h3>
+	<hr>
+  	<div class='row mb-4'>
+		<label>Total letters</label>
+	  	<input type="text" value=3 class="col form-control m-3" id='total_letters' placeholder="Total Letters">
+	</div>
+  	<label>Select First Letter(Required)</label>
+  	<div class='row mb-4'>
+		<select class='col form-select m-3' id='select_first_letter'></select>
+		<select class='col form-select m-3' id='select_first_symb'></select>
+	</div>
+  	<label>Select Second Letter (Optional)</label>
+  	<div class='row mb-4'>
+		<select class='col form-select m-3' id='select_second_letter'></select>
+		<select class='col form-select m-3' id='select_second_symb'></select>
+	</div>
+	<div class='mb-4'>
+		<button class='btn btn-lg btn-primary' onclick="generateNamesFromRawInput()">Generate Names</button>
+	</div>
+	<hr>
+  	<div class='row m-3' id='name_list'></div>
+	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src='index.js'></script>
+
+  </body>
+</html>
+
